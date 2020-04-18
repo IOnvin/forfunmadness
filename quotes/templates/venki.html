@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="container-fluid" align="left">
+        <img align="middle" height="600" width="350" src="https://static1.squarespace.com/static/5884a91d6a49636e23d93533/t/5ce56510588e8c0001343e98/1558537748492/roaring_lion.jpg?format=1500w" alt="hero">
+    </div>
+    <a href= "{% url 'index' %}"><h2>Back to Home Page</h2></a>
+    {% endblock %}
+</body>
+</html>

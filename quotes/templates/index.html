@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    img {
+      display: block;
+      margin-left: 100px;
+      margin-right: auto;
+      height: 500px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 25%;
+      padding: 20px;
+    }
+    </style>
+    <title>Animutyalu</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <div class="row">
+        <div class="column">
+            <h1 style="font-weight: bold; margin-top: 0.67em; margin-left: 10%;" >We are bloody Animutyalu</h1><br>
+            <h4 style="margin-left: 10%;">We Love A. R. Rahman</h4>
+            <h4 style="margin-left: 10%;">&#10084;&#10084;&#10084;&#10084;&#10084;&#10084;</h4>
+            <br>
+            <img src="https://im.whatshot.in/img/2020/Jan/-78a4812-cropped-1578481919.jpg"><br>
+        </div>
+        <div class="column">
+            <h1>To see Srinu picture click here</h1>
+            <a href= "{% url 'srinu' %}"><h2>Click Here</h2></a>
+            <br />
+            <br />
+            <h1>To see Pratyu picture click here</h1>
+            <a href= "{% url 'pratyu' %}"><h2>Click Here</h2></a>
+            <br />
+            <br />
+            <h1>To see Venki picture click here</h1>
+            <a href= "{% url 'venki' %}"><h2>Click Here</h2></a>
+    </div>
+    {% endblock %}
+</body>
+</html>

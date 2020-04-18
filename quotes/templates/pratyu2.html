@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="container-fluid" align="left">
+        <img align="middle" height="500" width="700" src="https://scontent.fhyd4-1.fna.fbcdn.net/v/t31.0-8/26198227_941456302683408_943468133262370463_o.jpg?_nc_cat=109&_nc_sid=dd7718&_nc_ohc=7FZujOaCNMIAX_raqTN&_nc_ht=scontent.fhyd4-1.fna&oh=cb0f95677a9ac68170f692ae783bab05&oe=5EC0B6CE" alt="hero">
+    </div>
+    <a href= "{% url 'index' %}"><h2>Back to Home Page</h2></a>
+    {% endblock %}
+</body>
+</html>

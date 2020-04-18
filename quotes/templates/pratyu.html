@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <div class="container-fluid" align="left">
+        <img align="middle" height="500" width="500" src="https://i.pinimg.com/originals/93/b1/2f/93b12f7d933c3d8d938b6cbb4312dba1.jpg" alt="hero">
+    </div>
+    <h1>Just Kidding, this time I am serious click here to see Pratyu
+            <a href= "{% url 'pratyu2' %}"><h2>Click Here</h2></a>
+    {% endblock %}
+</body>
+</html>
